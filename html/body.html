@@ -2,43 +2,50 @@
 <html lang="en">
 <head>
     <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
-    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <script type="text/javascript" src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
-    </script>
-    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js">
-    </script>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/mobile.css">
+    <link rel="stylesheet" type="text/css" href="../css/primary-blue.css">
+    <script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="../js/login.js"></script>
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="../css/IE.css" />
+    <script src="../js/html5.js"></script>
+    <![endif]-->
+    <!--[if lte IE 8]>
+    <script type="text/javascript" src="../js/IE.js"></script>
+    <![endif]-->
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Test</title>
 </head>
 <body>
 <!--    Start TopToolbar    -->
-<aside >
-    <div>
+<aside class="top-aside clearfix">
+    <div class="center-wrap">
         <!--    Start LeftTopToolbar   -->
-        <div>
-            <div>
-                <ul>
-                    <li><a></a></li>
+        <div class="one_half">
+            <div class="sidebar-widget">
+                <ul class="custom-menu">
+                    <li class="current-menu-item"><a title="这个是公司名称,点击有惊喜" href="https://www.baidu.com">这个是公司名称,点击有惊喜</a></li>
                 </ul>
             </div>
         </div>
         <!--    End LeftTopToolbar   -->
         <!--    Start RightTopToolbar    -->
-        <div>
-            <div>
-                <div>
-                    <ul>
-                        <li><a></a></li>
-                        <li><a></a></li>
+        <div class="one_half">
+            <div class="sidebar-widget">
+                <div id="topLoginId" >
+                    <ul class="social_icons">
+                        <li><a class="rss" title="登录" href="###" onclick="login();">登录</a></li>
+                        <li><a class="twitter" title="注册" herf="###" target="_blank">注册</a></li>
                     </ul>
                     <!-- Start Login in -->
-                    <div>
-                        <ul>
-                            <li><strong><a></a></strong></li>
-                            <li><a></a></li>
-                            <li><a></a></li>
-                            <li><a></a></li>
-                            <li><a></a></li>
+                    <div id="userOnline" style="displya:none">
+                        <ul class="social_icons">
+                            <li><strong><a class="facebook" target="_blank" href="https://www.acfun.cn" id="userDiv"></a></strong></li>
+                            <li><a class="email" target="_blank" href="http://www.acfun.cn" >测试</a></li>
+                            <li><a class="delicious" target="_blank" href="http://www.acfun.cn" >测试</a></li>
+                            <li><a class="linkedin" target="_blank" href="http://www.acfun.cn" >测试</a></li>
+                            <li><a class="youtube" target="_blank" href="http://www.acfun.cn" >测试</a></li>
                         </ul>
                     </div>
                     <!-- End Login in -->
@@ -47,134 +54,175 @@
         </div>
         <!--    End RightTopToolbar    -->
         <!--    Shadow Line     -->
-        <div></div>
+        <div class="top-aside-shadow"></div>
     </div>
 </aside>
 <!--    End TopToolbar  -->
 <!--    Star Header    -->
 <header>
-    <div>
-
+    <div class="center-wrap">
+        <div class="companyIdentity"><a herf="https://www.baidu.com"><img src="../resources/img/steam.png" alt="社会社会"/></a></div>
+        <!-- End companyIdentity-->
+        <!-- Start Main Navigation -->
+        <nav>
+             <ul>
+                 <li class="current-menu-item"><a>首页</a></li>
+                 <li><a href="###">我是菜单</a></li>
+                 <li><a href="###">我能下拉</a>
+                     <ul class="sub-menu">
+                         <li><a title="下拉1" target="_blank" href="###">下拉1</a></li>
+                         <li><a title="下拉2" href="###s">下拉2</a></li>
+                     </ul>
+                 </li>
+                 <li><a>我也是菜单</a></li>
+                 <li><a>我还是菜单</a></li>
+                 <li><a>依然是菜单</a></li>
+             </ul>
+        </nav>
     </div>
-    <!-- End companyIdentity-->
-    <!-- Start Main Navigation -->
-    <nav>
-         <ul>
-             <li><a></a></li>
-             <li><a></a></li>
-             <li><a></a>
-                 <ul>
-                     <li><a></a></li>
-                     <li><a></a></li>
-                 </ul>
-             </li>
-             <li><a></a></li>
-             <li><a></a></li>
-             <li><a></a></li>
-         </ul>
-    </nav>
     <!-- End Main Navigation -->
 </header>
 <!--    End Header     -->
 <!--    Start Banner Area   -->
-<section>
-    <div>
-        <div>
-            <div>
-                <div>
-                    <div>
-                        <div><a><img/></a>
+<section class="banner-slider">
+   <div class="center-wrap">
+        <div id="slides">
+            <div class="slides_container">
+                <div class="clearfix home-slider-post">
+                    <div class="one_half">
+                        <div class="single-post-thumb">
+                            <a href="https://www.baidu.com">
+                                <img alt="测试轮播图1" class="aligncenter size-full wp-image-1059"
+                                     div="" height="306" width="600" src="../resources/img/steam.png"/>
+                        </a>
                         </div>
                     </div>
-                    <div>
-                        <h2>
-                            <a></a></h2>
+                    <div class="one_half">
+                        <h2 style="font-size:20px;">
+                            <a href="###"><span>我是标题</span></a></h2>
                         <p>
-                        <a></a></p>
+                            <a href="###" style="color:#fff">文章是我是我是我是我是我是我是我是我是我是我是我是我是我是我是我是我是我</a></p>
                     </div>
                 </div>
                 <!-- END slider post -->
-                <div>
-                    <div>
-                        <h2>
-                            <a></a></h2>
-                        <p>
-                            <a></a></p>
-                    </div>
-                    <div>
-                        <div>
-                            <a><img/></a>
+                <div class="clearfix home-slider-post">
+                    <div class="one_half">
+                        <div class="single-post-thumb">
+                            <a href="https://www.baidu.com">
+                                <img alt="测试轮播图2" class="aligncenter size-full wp-image-1059"
+                                     div="" height="306" width="600" src="../resources/img/Gfat.jpg" title="Image - Web Display"/>
+                            </a>
                         </div>
+                    </div>
+                    <div class="one_half">
+                        <h2 style="font-size:20px;">
+                            <a href="###"><span>我是标题2</span></a></h2>
+                        <p>
+                            <a href="###" style="color:#fff">我是文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章文章</a></p>
                     </div>
                 </div>
                 <!-- END slider post -->
-                <div>
-                    <p><img/></p>
+                <div class="clearfix home-slider-post">
+                    <p>
+                        <a href="https://www.baidu.com">
+                            <img alt="测试轮播图3" class="aligncenter size-full wp-image-1059"
+                                  height="306" width="600" src="../resources/img/steam.png" title="Image - Web Display"/>
+                        </a>
+                    </p>
                 </div>
                 <!-- END slider post -->
                 <!-- End slides_container --></div>
             <!-- Edn slides --></div>
     </div>
-    <div>
-
+    <div class="shadow top">
+        &nbsp;
     </div>
-    <div>
-
+    <div class="shadow button">
+        &nbsp;
     </div>
-    <div>
-
+    <div class="tt-overlay">
+        &nbsp;
     </div>
 </section>
 <!--    End Banner Area    -->
 <!--    Start Content Container    -->
-<section>
-    <div>
-        <div>
-            <a><img/></a></div>
-        <h5></h5>
-        <p></p>
-    </div>
-    <!-- END one_third -->
-        <div>
-            <div>
-                <a><img/></a></div>
-            <h5></h5>
-            <p></p>
+<section id="content-container" class="clearfix">
+    <div id="main-wrap" class="main-wrap-slider">
+        <div class="one_third">
+        <div class="img-frame full-third-short" >
+            <a href="###" target="_self"><img class="img" alt="pubg" height="124" width="280" src="../resources/img/pubg.jpg"/></a></div>
+        <h5 style="font-size:14px">PUBG</h5>
+        <p>巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉</p>
         </div>
         <!-- END one_third -->
-        <div>
-            <div>
-                <a><img/></a></div>
-            <h5></h5>
-            <p></p>
+        <div class="one_third">
+        <div class="img-frame full-third-short" >
+            <a href="###" target="_self"><img class="img" alt="pubg" height="124" width="280" src="../resources/img/pubg.jpg"/></a></div>
+        <h5 style="font-size:14px">PUBG</h5>
+        <p>巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉</p>
         </div>
         <!-- END one_third -->
-        <div></div>
-        <section>
-            <div>
-                <ul>
-                    <li><a></a>&nbsp;<a></a><span></span></li>
+        <div class="one_third">
+        <div class="img-frame full-third-short" >
+        <a href="###" target="_self"><img class="img" alt="pubg" height="124" width="280" src="../resources/img/pubg.jpg"/></a></div>
+        <h5 style="font-size:14px">PUBG</h5>
+        <p>巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉</p>
+        </div>
+        <!-- END one_third -->
+        <div class="hr hr-dotted"></div>
+        <section id="home-marketing-blogposts">
+            <strong style='font-size: 14px; padding-left: 20px; background: transparent
+            url("../resources/img/bg-blog-comments.png") no-repeat scroll'>不知道叫啥</strong>
+            <div class="article_preview" style="margin-top: 15px">
+                <ul style="width:480px;float:left;line-height:1.8em">
+                    <li style="width:100%;margin-bottom:0px;float:left"><a href="###" target="_blank" title="测试">
+                        [测试]</a>&nbsp;<a href="###" target="_blank">这个人很懒，什么也没留下</a>
+                        <span style="width:80px;float:right;margin-bottom:0px;list-style-image:none"><i class="new">new</i></span></li>
                 </ul>
-                <ul>
-                    <li><a></a>&nbsp;<a></a><span></span></li>
+                <ul style="width:480px;float:left;line-height:1.8em">
+                    <li style="width:100%;margin-bottom:0px;float:left"><a href="###" target="_blank" title="测试">
+                        [测试]</a>&nbsp;<a href="###" target="_blank">这个人很懒，什么也没留下</a>
+                        <span style="width:80px;float:right;margin-bottom:0px;list-style-image:none"><i class="new">new</i></span></li>
                 </ul>
-                <ul>
-                    <li><a></a>&nbsp;<a></a><span></span></li>
+                <ul style="width:480px;float:left;line-height:1.8em">
+                    <li style="width:100%;margin-bottom:0px;float:left"><a href="###" target="_blank" title="测试">
+                        [测试]</a>&nbsp;<a href="###" target="_blank">这个人很懒，什么也没留下</a>
+                        <span style="width:80px;float:right;margin-bottom:0px;list-style-image:none"><i class="new">new</i></span></li>
                 </ul>
-                <ul>
-                    <li><a></a>&nbsp;<a></a><span></span></li>
+                <ul style="width:480px;float:left;line-height:1.8em">
+                    <li style="width:100%;margin-bottom:0px;float:left"><a href="###" target="_blank" title="测试">
+                        [测试]</a>&nbsp;<a href="###" target="_blank">这个人很懒，什么也没留下</a>
+                        <span style="width:80px;float:right;margin-bottom:0px;list-style-image:none"><i class="new">new</i></span></li>
                 </ul>
-                <ul>
-                    <li><a></a>&nbsp;<a></a><span></span></li>
+                <ul style="width:480px;float:left;line-height:1.8em">
+                    <li style="width:100%;margin-bottom:0px;float:left"><a href="###" target="_blank" title="测试">
+                        [测试]</a>&nbsp;<a href="###" target="_blank">这个人很懒，什么也没留下</a>
+                        <span style="width:80px;float:right;margin-bottom:0px;list-style-image:none"><i class="new">new</i></span></li>
                 </ul>
             </div>
         </section>
-        <aside>
-            <div>
-                <div><a><img/></a></div>
-                <div><a><img/></a></div>
-                <div><a><img/></a></div>
-                <div><a><img/></a></div>
+        <aside id="home-marketing-testimonials">
+            <strong style="font-size:14px">仍不知道叫啥</strong>
+            <div style="margin-top:15px">
+                <div style="divwidth:32%;float:left;margin-top:5px">
+                    <a href="https://www.baidu.com" target="_blank" title="测试连接">
+                    <img height="92" width="134" src="../resources/img/steam.png"/>
+                </a>
+                </div>
+                <div style="divwidth:32%;float:left;margin-top:5px">
+                    <a href="https://www.baidu.com" target="_blank" title="测试连接">
+                        <img height="92" width="134" src="../resources/img/steam.png"/>
+                    </a>
+                </div>
+                <div style="divwidth:32%;float:left;margin-top:5px">
+                    <a href="https://www.baidu.com" target="_blank" title="测试连接">
+                        <img height="92" width="134" src="../resources/img/steam.png"/>
+                    </a>
+                </div>
+                <div style="float:left;margin-top:5px">
+                    <a style="margin-right:3px" href="http://e.t.qq.com/wxsj2011" target="_blank"><img src="../resources/img/tx.png"></a>
+                        <a style="margin-right:3px" href="http://e.t.qq.com/wxsj2011" target="_blank"><img src="../resources/img/tx.png"></a>
+                </div>
             </div>
         </aside>
     </div>
@@ -182,11 +230,108 @@
 <!--    End Content Container    -->
 <!--    Start footer     -->
 <footer>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
+    <div class="center-wrap tt-relative">
+        <div class="footer-content clearfix">
+            <div class="footer-default-one" style="width:100%">
+                    <div style="float:left;width:20%">
+                        <ul class="tt-icon icon-user-group" style="line-height: 3.0em">
+                            <li style="list-style-image:none;font-weight:bold;margin:0;font-size:16px">菜单1</li>
+                            <li style="list-style-image:none;margin:0;font-size:16px"><a href="www.acfun.cn" target="_blank">功能1</a></li>
+                            <li style="list-style-image:none;margin:0;font-size:16px"><a href="###" target="_blank">功能2</a></li>
+                            <li style="list-style-image:none;margin:0;font-size:16px"><a href="###" target="_blank">功能3</a></li>
+                            <li style="list-style-image:none;margin:0;font-size:16px"><a href="###" target="_blank">功能4</a></li>
+                        </ul>
+                    </div>
+                    <div style="float:left;width:20%">
+                        <ul class="tt-icon icon-games" style="line-height: 3.0em">
+                            <li style="list-style-image:none;font-weight:bold;margin:0;font-size:16px">菜单2</li>
+                            <li style="list-style-image:none;margin:0;font-size:16px"><a href="www.acfun.cn" target="_top">功能1</a></li>
+                            <li style="list-style-image:none;margin:0;font-size:16px"><a href="###" target="_blank">功能2</a></li>
+                            <li style="list-style-image:none;margin:0;font-size:16px"><a href="###" target="_blank">功能3</a></li>
+                            <li style="list-style-image:none;margin:0;font-size:16px"><a href="###" target="_blank">功能4</a></li>
+                        </ul>
+                    </div>
+                <div style="float:left;width:20%">
+                    <ul class="tt-icon icon-chat" style="line-height: 3.0em">
+                        <li style="list-style-image:none;font-weight:bold;margin:0;font-size:16px">菜单3</li>
+                        <li style="list-style-image:none;margin:0;font-size:16px"><a href="www.acfun.cn" target="_blank">功能1</a></li>
+                        <li style="list-style-image:none;margin:0;font-size:16px"><a href="###" target="_blank">功能2</a></li>
+                        <li style="list-style-image:none;margin:0;font-size:16px"><a href="###" target="_blank">功能3</a></li>
+                        <li style="list-style-image:none;margin:0;font-size:16px"><a href="###" target="_blank">功能4</a></li>
+                    </ul>
+                </div>
+                <div style="float:left;width:20%">
+                    <ul class="tt-icon icon-star" style="line-height: 3.0em">
+                        <li style="list-style-image:none;font-weight:bold;margin:0;font-size:16px">菜单4</li>
+                        <li style="list-style-image:none;margin:0;font-size:16px"><a href="www.acfun.cn" target="_blank">功能1</a></li>
+                        <li style="list-style-image:none;margin:0;font-size:16px"><a href="###" target="_blank">功能2</a></li>
+                        <li style="list-style-image:none;margin:0;font-size:16px"><a href="###" target="_blank">功能3</a></li>
+                        <li style="list-style-image:none;margin:0;font-size:16px"><a href="###" target="_blank">功能4</a></li>
+                    </ul>
+                </div>
+                <div style="float:left;width:20%">
+                    <ul class="tt-icon icon-email-send" style="line-height: 3.0em">
+                        <li style="list-style-image:none;font-weight:bold;margin:0;font-size:16px">菜单4</li>
+                        <li style="list-style-image:none;margin:0;font-size:16px"><a href="www.acfun.cn" target="_blank">功能1</a></li>
+                        <li style="list-style-image:none;margin:0;font-size:16px"><a href="###" target="_blank">功能2</a></li>
+                        <li style="list-style-image:none;margin:0;font-size:16px"><a href="###" target="_blank">功能3</a></li>
+                        <li style="list-style-image:none;margin:0;font-size:16px"><a href="###" target="_blank">功能4</a></li>
+                    </ul>
+                </div>
+                    <!-- END sidebar-widget -->
+            </div>
+            <!-- End footer-default-one -->
+        </div>
+        <!-- End footer-content -->
+    </div>
+    <!-- End center-wrap -->
+    <div class="div footer-copyright clearfix">
+        <div class="foot-copy">
+            <p>Copyright &copy; 2015 Infiniteworld Co.,Ltd. All rights reserved.</p>
+            <!-- End foot-copy -->
+        </div>
+        <ul class="footer-nav" style="margin:0">
+            <li><a href="###" target="_blank">备案信息</a></li>
+            <li><a href="###" target="_blank">备案信息</a></li>
+            <li><a href="###" target="_blank">备案信息</a></li>
+            <li><a href="###" target="_blank">备案信息</a></li>
+        </ul>
+    <!-- End footer-copyright -->
+    </div>
+    <div class="shadow top"></div>
+    <div class="tt-overlay"></div>
 </footer>
+<div style="display:none;height:0;width:0;">
+    <script type="text/javascript">
+        var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+        document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Faf3bcae330acc9d3f90536b76c35fec9' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+   <script src="http://s96.cnzz.com/stat.php?id=4180883&web_id=4180883" language="JavaScript"></script> >
+</div>
+<script type="text/javascript" src="../js/custom-main.js"></script>
+<script type="text/javascript" src="../js/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" src="../js/slides.min.jquery.js"></script>
+<script type="text/javascript" src="../js/jquery.cycle.all.min.js"></script>
+<script type="text/javascript" src="../js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="../js/custom-gallery.js"></script>
+<script type="text/javascript" src="../js/jquery.isotope.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function(){
+        jQuery('#slides').slides({
+            generateNextPrev: true,
+            next: 'next',
+            prev: 'prev',
+            preload: false,
+            //preloadImage: 'preloader url here',
+            autoHeight: true,
+            effect: 'slide',
+            slideSpeed: 500,
+            play: 0,
+            randomize: false,
+            hoverPause: false,
+        });
+    });
+</script>
 <!--    End Footer    -->
 </body>
 </html>
