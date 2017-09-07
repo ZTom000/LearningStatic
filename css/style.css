@@ -47,7 +47,7 @@ body,
 html {background:#FFF;}
 
 body {
-    font-family:"宋体","HelveticaNeue-Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family:"微软雅黑","HelveticaNeue-Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
     color:#636B75;
     line-height:1;
     margin:0;
@@ -1103,9 +1103,17 @@ label span{
     margin-top:-10px;
 }
 
+#article_preview_list {
+    width:480px;
+    float:left;
+    line-height:1.8em
+}
 
-
-
+#article_preview_list ul li{
+    width:100%;
+    margin-bottom:0px;
+    float:left;
+}
 
 
 

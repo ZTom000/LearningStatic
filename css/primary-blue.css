@@ -6,7 +6,7 @@
 .banner-slider,
 footer {
     background-color: #0D5292;
-    background-image: url(http://std.51play.com/51play_v9/images/skins/bg-banner-blue.png);
+    background-image: url(../resources/img/bg-banner-blue.png);
     background-position: center center;
     background-repeat: no-repeat;
     background: -webkit-gradient(radial, center center, 0, center center, 460, from(#0D9DDC), to(#0D5292));
